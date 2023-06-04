@@ -9,10 +9,12 @@ class Products {
 		if (pushProduct) {
 			el.classList.add(this.classNameActive);
 			el.innerHTML = this.labalRemove;
+
 		} else {
 			el.classList.remove(this.classNameActive);
 			el.innerHTML = this.labalAdd;
 		}
+		headerPage.render(products.length);
 	}
 
 	render() {
