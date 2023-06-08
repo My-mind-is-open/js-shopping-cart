@@ -1,0 +1,57 @@
+@import "variables";
+
+.products-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 45px;
+	width: 80%;
+	max-width: 1200px;
+	margin: $spacing-large auto;
+
+
+	.products-element {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 25px 20px;
+		background-color: $color-white;
+		box-shadow: $box-shadow;
+		border-radius: $border-radius;
+
+		.products-element__name {
+			margin-bottom: auto;
+			font-weight: bold;
+		}
+
+		.products-element__img {
+			width: 100%;
+			height: 270px;
+			object-fit: contain;
+			margin-top: $spacing-medium;
+
+		}
+
+		.products-element__price {
+			margin-top: $spacing-medium;
+			color: $color-unaccent;
+
+		}
+
+		.products-element__btn {
+			margin-top: $spacing-medium;
+			padding: $spacing-small $spacing-medium;
+			border: 1px solid $color-unaccent;
+			border-radius: $border-radius;
+			cursor: pointer;
+			outline: none;
+			background: none;
+			font-family: inherit;
+			font-size: inherit;
+		}
+
+		.products-element__btn_active {
+			border: 1px solid transparent;
+			background-image: $linear-gradient;
+		}
+	}
+}

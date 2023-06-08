@@ -1,0 +1,31 @@
+@import "variables";
+@import"header";
+@import 'products';
+@import'shopping';
+
+::-webkit-scrollbar {
+	width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-dark);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--color-white);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	line-height: 1.7;
+	background-color: var(--color-light);
+
+}

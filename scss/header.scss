@@ -1,0 +1,15 @@
+@import "variables";
+
+.header-container {
+	height: 50px;
+	padding: $spacing-small;
+	background-color: $color-aqua;
+	display: flex;
+
+	.header-counter {
+		margin-left: auto;
+		padding-right: $spacing-medium;
+		cursor: pointer;
+		font-weight: bold;
+	}
+}

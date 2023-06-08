@@ -1,0 +1,97 @@
+@import "variables";
+
+.shopping-container {
+	width: 80%;
+	height: 90vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	padding: $spacing-large;
+	background-color: $color-white;
+	box-shadow: $box-shadow;
+
+	.shopping-element__name {
+		padding: $spacing-medium;
+		font-weight: bold;
+	}
+
+	.shopping-element__price {
+		padding: $spacing-medium;
+		color: $color-unaccent;
+	}
+
+	.shoppingPage__btn {
+		text-decoration: none;
+		color: #6b5770;
+		background-image: linear-gradient(90deg, #fd7f34, #bd155b);
+		display: inline-block;
+		padding: 14px 30px;
+		border: 1px solid;
+		position: relative;
+		z-index: 0;
+		border-radius: 5px;
+		box-sizing: border-box;
+		margin: 0 15px 15px 0;
+		outline: none;
+		cursor: pointer;
+		user-select: none;
+		appearance: none;
+		touch-action: manipulation;
+		position: absolute;
+		top: $spacing-large;
+		right: $spacing-large;
+	}
+
+	.shoppingPage__btn:before {
+		content: '';
+		position: absolute;
+		left: -2px;
+		top: -2px;
+		width: calc(100% + 4px);
+		height: calc(100% + 4px);
+		background: linear-gradient(90deg, #fd7f34, #bd155b);
+		z-index: -2;
+		transition: .4s;
+		border-radius: 5px;
+	}
+
+	.shoppingPage__btn:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgb(9, 180, 214);
+		z-index: -1;
+		transition: .4s;
+		border-radius: 4px;
+	}
+
+	.shoppingPage__btn:hover {
+		color: #fff;
+		transition: .3s;
+	}
+
+	.shoppingPage__btn:hover:after {
+		background: linear-gradient(90deg, #fd7f34, #bd155b);
+	}
+
+	.shoppingPage__btn:active:after {
+		background: linear-gradient(90deg, #d96d2d, #760f3a);
+	}
+
+	.shoppingPage__btn:focus-visible {
+		box-shadow: 0 0 0 3px #fd7f34;
+	}
+
+	.shoppingPage__btn:disabled {
+		pointer-events: none;
+	}
+
+	.btn:disabled:before {
+		filter: grayscale(100%);
+	}
+}
