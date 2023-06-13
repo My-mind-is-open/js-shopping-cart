@@ -31,11 +31,51 @@
 
 		}
 
-		.products-element__price {
-			margin-top: $spacing-medium;
-			color: $color-unaccent;
+		.products-element__sizes-price {
+			width: 100%;
 
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+
+			.products-element__price {
+				margin-top: $spacing-medium;
+				color: $color-unaccent;
+				width: 40%;
+
+			}
+
+			.products-element__sizes {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+
+				width: 60%;
+				margin-bottom: 5px;
+
+				.products-element__size {
+					width: 20px;
+					height: 20px;
+					background-color: bisque;
+					font-size: 12px;
+					border: 1px solid black;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					border-radius: 50%;
+				}
+
+				.products-element__size-active {
+					background: #FF1493;
+				}
+
+				.products-element__size:hover {
+					background: #00BFFF;
+				}
+			}
 		}
+
 
 		.products-element__btn {
 			margin-top: $spacing-medium;
