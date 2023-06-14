@@ -31,40 +31,33 @@
 		color: $color-unaccent;
 	}
 
-	.shoppingPage__btn {
-		text-decoration: none;
-		color: $color-black;
-		background: rgb(9, 180, 214);
-		display: inline-block;
-		padding: 14px 30px;
-		border: 1px solid $color-black;
-		z-index: 0;
-		border-radius: 5px;
-		box-sizing: border-box;
-		margin: 0 15px 15px 0;
-		outline: none;
-		cursor: pointer;
-		user-select: none;
-		appearance: none;
-		touch-action: manipulation;
-		position: absolute;
-		top: $spacing-large ;
-		right: $spacing-large;
-	}
 
-	.shoppingPage__btn:hover {
-		color: $color-white;
-		background: $color-black;
-	}
+
+
+}
+
+.shoppingPage__btn {
+	border: 0px;
+	top: $spacing-large ;
+	right: $spacing-large;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background-image: url("../img/close.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+	background-color: $color-white;
 }
 
 .shoppingPage__btn-clear {
-
 	text-decoration: none;
 	color: $color-black;
 	background: rgb(9, 180, 214);
 	display: inline-block;
-	padding: 14px 30px;
+	width: 100px;
+	height: 50px;
 	border: 1px solid $color-black;
 	z-index: 0;
 	border-radius: 5px;
@@ -72,16 +65,64 @@
 	margin: 0 15px 15px 0;
 	outline: none;
 	cursor: pointer;
-	user-select: none;
-	appearance: none;
-	touch-action: manipulation;
 	position: absolute;
 	bottom: $spacing-large ;
 	right: $spacing-large;
-
 }
 
 .shoppingPage__btn-clear:hover {
 	color: $color-white;
 	background: $color-black;
+}
+
+.shopping-element__plus {
+
+	background-image: url("../img/plus.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+	background-color: $color-white;
+	width: 20px;
+	height: 20px;
+	border: none;
+
+}
+
+// .shopping-element__plus:hover {
+// 	background: red;
+// }
+
+
+.shopping-element__minus {
+	border: none;
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/minus.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+	background-color: $color-white;
+
+}
+
+
+
+// td {
+
+// 	width: 150px;
+// }
+
+@media(max-width:650px) {
+	.shopping-container {
+
+
+		.shoppingPage__btn {
+
+			left: $spacing-large;
+			top: 83.9%;
+		}
+	}
+
 }

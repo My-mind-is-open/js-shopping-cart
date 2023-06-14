@@ -5,11 +5,7 @@ class LocalStorageUtil {
 
 	}
 	getProducts() {
-
-
 		const productsLocalStorage = localStorage.getItem(this.keyName);
-
-
 		if (productsLocalStorage !== null) {
 			return JSON.parse(productsLocalStorage)
 		}
@@ -22,32 +18,28 @@ class LocalStorageUtil {
 		let obj = {
 			name: id,
 			sizes: size,
+			// btn:
 		}
 		let products = this.getProducts();
 		let pushProduct = false;
 
 
-		const index = products.indexOf(id);
-		console.log(products)
+		// const index = products.indexOf(id);
+
 		let index2 = products.find((e) => e.name == id)
-		console.log(index2)
+
 		if (typeof index2 == 'undefined') {
 			products.push(obj);
 			pushProduct = true;
 		} else {
-			console.log('work')
+
 			let newArr = products.findIndex(n => n.name === id);
+
 			if (newArr !== -1) {
 				products.splice(newArr, 1)
 			}
 		}
 
-		// if (index === -1) {
-		// 	products.push(obj);
-		// 	pushProduct = true;
-		// } else {
-		// 	products.splice(index, 1);
-		// }
 
 		localStorage.setItem(this.keyName, JSON.stringify(products));
 		return {

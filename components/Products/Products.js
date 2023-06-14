@@ -52,7 +52,7 @@ class Products {
 			let index = productsStore.find((e) => e.name == id);
 
 
-			console.log(index)
+
 
 			if (typeof index == 'undefined') {
 				activeText = this.labalAdd;
@@ -81,23 +81,10 @@ class Products {
 
 				activeClass = " " + this.classNameActive
 				activeText = this.labalRemove;
-				// activeClassSize = ' ' + this.classNameActiveSize;
+
 			}
 
 
-
-
-
-
-
-			// if (productsStore.indexOf(id) === -1) {
-			// 	activeText = this.labalAdd;
-
-			// } else {
-			// 	activeClass = " " + this.classNameActive
-			// 	activeText = this.labalRemove;
-
-			// }
 			htmlCatalog += `
 			<li class="products-element">
 			<span class="products-element__name">${name}</span>

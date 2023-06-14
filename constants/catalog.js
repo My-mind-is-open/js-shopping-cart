@@ -41,6 +41,7 @@ const CATALOG = [
 		price: 16490,
 		size: ['40', '41', '42', '43', '44', '45'],
 
+
 	},
 	{
 		id: 'el6',
@@ -48,6 +49,7 @@ const CATALOG = [
 		img: 'https://i.ibb.co/pRY5jMS/img6.jpg',
 		price: 18490,
 		size: ['40', '41', '42', '43', '44', '45'],
+
 	},
 	{
 		id: 'el7',
@@ -55,6 +57,7 @@ const CATALOG = [
 		img: 'https://i.ibb.co/kQP5Vm9/img7.jpg',
 		price: 18990,
 		size: ['40', '41', '42', '43', '44', '45'],
+
 	},
 	{
 		id: 'el8',
@@ -78,5 +81,6 @@ const CATALOG = [
 		img: 'https://i.ibb.co/fCwFC3n/img10.jpg',
 		price: 15990,
 		size: ['40', '41', '42', '43', '44', '45'],
+
 	},
 ]

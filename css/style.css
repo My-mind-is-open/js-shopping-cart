@@ -267,36 +267,20 @@
   padding: 15px;
   color: #808080;
 }
-.shopping-container .shoppingPage__btn {
-  text-decoration: none;
-  color: #000;
-  background: rgb(9, 180, 214);
-  display: inline-block;
-  padding: 14px 30px;
-  border: 1px solid #000;
-  z-index: 0;
-  border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0 15px 15px 0;
-  outline: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  position: absolute;
+
+.shoppingPage__btn {
+  border: 0px;
   top: 30px;
   right: 30px;
-}
-.shopping-container .shoppingPage__btn:hover {
-  color: #fff;
-  background: #000;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  background-color: #fff;
 }
 
 .shoppingPage__btn-clear {
@@ -304,7 +288,8 @@
   color: #000;
   background: rgb(9, 180, 214);
   display: inline-block;
-  padding: 14px 30px;
+  width: 100px;
+  height: 50px;
   border: 1px solid #000;
   z-index: 0;
   border-radius: 5px;
@@ -313,15 +298,6 @@
   margin: 0 15px 15px 0;
   outline: none;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
   position: absolute;
   bottom: 30px;
   right: 30px;
@@ -332,6 +308,36 @@
   background: #000;
 }
 
+.shopping-element__plus {
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.shopping-element__minus {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/minus.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+@media (max-width: 650px) {
+  .shopping-container .shoppingPage__btn {
+    left: 30px;
+    top: 83.9%;
+  }
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
