@@ -1,0 +1,47 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+
+
+.sort {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	.sort-container {
+
+
+		margin-top: 10px;
+		height: 50px;
+		width: 350px;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+
+		.sort__btn {
+			width: 70px;
+			height: 40px;
+			border-radius: 15%;
+			cursor: pointer;
+			border: 2px solid#008B8B;
+			font-family: 'Roboto Condensed', sans-serif;
+			background: $color-white;
+		}
+
+		.sort__btn:hover {
+			background-color: #6495ED;
+		}
+
+		.sort__btn-active {
+			background: #FFB6C1;
+			border: 2px solid black;
+		}
+	}
+
+	// #6495ED
+
+}

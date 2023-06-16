@@ -6,7 +6,7 @@
 	grid-gap: 45px;
 	width: 80%;
 	max-width: 1200px;
-	margin: $spacing-large auto;
+	margin: $spacing-medium auto;
 
 
 	.products-element {
@@ -18,7 +18,35 @@
 		box-shadow: $box-shadow;
 		border-radius: $border-radius;
 
-		.products-element__name {
+		position: relative;
+
+		.products-element__rating {
+			position: absolute;
+			top: $spacing-medium+2px;
+			right: $spacing-medium;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.high {
+			border: 2px solid greenyellow;
+		}
+
+		.middle {
+			border: 2px solid orange;
+		}
+
+		.low {
+			border: 2px solid red;
+		}
+
+
+		.products-element__rating .products-element__name {
 			margin-bottom: auto;
 			font-weight: bold;
 		}
@@ -28,6 +56,7 @@
 			height: 270px;
 			object-fit: contain;
 			margin-top: $spacing-medium;
+			cursor: pointer;
 
 		}
 

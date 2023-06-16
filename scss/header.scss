@@ -10,6 +10,8 @@
 	justify-content: space-between;
 	align-items: center;
 
+
+
 	.header__label {
 		display: flex;
 		max-width: 250px;
@@ -48,8 +50,12 @@
 				font-size: 18px;
 				cursor: pointer;
 
-				.nav_link {
+				.nav__link {
 					text-decoration: none;
+				}
+
+				.nav__link:hover {
+					color: blueviolet;
 				}
 			}
 		}
@@ -61,6 +67,7 @@
 		cursor: pointer;
 		font-weight: bold;
 		font-family: 'Bagel Fat One', cursive;
+
 	}
 }
 

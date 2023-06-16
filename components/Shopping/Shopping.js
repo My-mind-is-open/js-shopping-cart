@@ -51,10 +51,6 @@ class Shopping {
 	render() {
 
 		const productsStore = localStorageUtil.getProducts();
-
-
-
-
 		let sumCatalog = 0;
 		let htmlCatalog = '';
 		CATALOG.forEach(({ id, name, price }) => {

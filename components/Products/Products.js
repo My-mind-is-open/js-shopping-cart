@@ -6,6 +6,9 @@ class Products {
 		this.classNameActiveSize = "products-element__size-active";
 		this.activeClassSize = '';
 		this.size = 40;
+		this.high = 'high';
+		this.middle = 'middle';
+		this.low = 'low';
 	}
 	handleSetLocationStorage(el, id) {
 
@@ -32,22 +35,35 @@ class Products {
 		}
 	}
 
+	showAboutProducts(id) {
+		aboutProductPage.render(id)
+	}
 
 
 
 
-
-	render() {
+	render(array = CATALOG) {
 
 		const productsStore = localStorageUtil.getProducts()
 		let htmlCatalog = '';
 
-		CATALOG.forEach(({ id, name, price, img, size }) => {
+		array.forEach(({ id, name, price, img, size, rating }) => {
 			let activeClass = '';
 			let activeText = '';
 			let htmlsize = '';
 			let activeClassSize = '';
 
+			let activeClassRating = '';
+			if (rating >= 9) {
+				activeClassRating = this.high;
+			}
+			else if (rating > 8) {
+				activeClassRating = this.middle;
+
+			} else if (7.9 > rating) {
+				activeClassRating = this.low;
+				console.log('work')
+			}
 
 			let index = productsStore.find((e) => e.name == id);
 
@@ -77,8 +93,6 @@ class Products {
 				});
 
 
-
-
 				activeClass = " " + this.classNameActive
 				activeText = this.labalRemove;
 
@@ -88,7 +102,8 @@ class Products {
 			htmlCatalog += `
 			<li class="products-element">
 			<span class="products-element__name">${name}</span>
-			<img class="products-element__img" src="${img}"/>
+			<span class="products-element__rating ${activeClassRating}">${rating}</span>
+			<img class="products-element__img" src="${img}" onclick="productsPage.showAboutProducts('${id}')"/>
 			<div class="products-element__sizes-price">
 			<span class="products-element__price">🤑${price.toLocaleString()} RUB</span>
 			<div class="products-element__sizes">
@@ -103,6 +118,7 @@ class Products {
 		});
 		const html = `
 		<ul class="products-container">
+		
 		${htmlCatalog}
 		</ul>`;
 		ROOT_PRODUCTS.innerHTML = html;

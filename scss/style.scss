@@ -2,6 +2,8 @@
 @import"header";
 @import 'products';
 @import'shopping';
+@import 'about-products';
+@import 'sort';
 
 ::-webkit-scrollbar {
 	width: 8px;
@@ -19,6 +21,8 @@
 
 * {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 body {
