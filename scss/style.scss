@@ -1,10 +1,11 @@
 @import "variables";
-@import"header";
-@import 'products';
-@import'shopping';
-@import 'about-products';
-@import 'sort';
-@import 'spinner';
+@import"../components/Header/header.scss";
+@import '../components/Products/products.scss';
+@import'../components/Shopping/shopping.scss';
+@import '../components/About-products/about-products.scss';
+@import '../components/Sort/sort.scss';
+@import '../components/Spinner/spinner.scss';
+@import '../components/Error/error.scss';
 
 * {
 	box-sizing: border-box;

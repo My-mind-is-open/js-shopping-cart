@@ -17,9 +17,11 @@ fetch(URL)
 		setTimeout(() => {
 			spinnerPage.handleClear()
 			render();
+
 		}, 2000)
 
 	})
 	.catch(error => {
-		console.log(error);
+		spinnerPage.handleClear()
+		errorPage.render()
 	})
