@@ -13,19 +13,7 @@ class Header {
 	<span class="header__text">Sneakers</span>
 	<img src="../img/purple.png" class="header__img"/>
 	</div>
-	<nav class="nav">
-	<ul class="nav__items">
-	<li class="nav__item">
-	<a class="nav__link">About</a>
-	</li>
-	<li class="nav__item">
-	<a class="nav__link">men's collection</a>
-	</li>
-	<li class="nav__item">
-	<a class="nav__link">Women's collection</a>
-	</li>
-	</ul>
-	</nav>
+	
 	<div class="header-counter" onclick="headerPage.handleOpenShoppingPage()">
 	🛒 ${count}
 	</div>
@@ -36,6 +24,6 @@ class Header {
 
 }
 const headerPage = new Header();
-const productsStore = localStorageUtil.getProducts();
+// const productsStore = localStorageUtil.getProducts();
 
-headerPage.render(productsStore.length);
+// headerPage.render(productsStore.length);

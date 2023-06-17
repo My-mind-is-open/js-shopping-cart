@@ -24,6 +24,7 @@ class Products {
 		}
 		headerPage.render(products.length);
 		productsPage.returnSize()
+		productsPage.render()
 	}
 	returnSize() {
 		this.size = 40;
@@ -39,11 +40,8 @@ class Products {
 		aboutProductPage.render(id)
 	}
 
-
-
-
 	render(array = CATALOG) {
-
+		console.log('1')
 		const productsStore = localStorageUtil.getProducts()
 		let htmlCatalog = '';
 
@@ -62,13 +60,10 @@ class Products {
 
 			} else if (7.9 > rating) {
 				activeClassRating = this.low;
-				console.log('work')
+
 			}
 
 			let index = productsStore.find((e) => e.name == id);
-
-
-
 
 			if (typeof index == 'undefined') {
 				activeText = this.labalAdd;
@@ -125,7 +120,7 @@ class Products {
 	}
 }
 const productsPage = new Products();
-productsPage.render()
+// productsPage.render()
 
 
 

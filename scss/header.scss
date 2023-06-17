@@ -31,35 +31,35 @@
 		}
 	}
 
-	.nav {
-		max-width: 600px;
-		width: 100%;
-		display: flex;
-		margin-right: 150px;
+	// .nav {
+	// 	max-width: 600px;
+	// 	width: 100%;
+	// 	display: flex;
+	// 	margin-right: 150px;
 
-		.nav__items {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+	// 	.nav__items {
+	// 		width: 100%;
+	// 		display: flex;
+	// 		justify-content: space-between;
+	// 		align-items: center;
 
 
-			.nav__item {
-				list-style-type: none;
-				font-family: 'Bagel Fat One', cursive;
-				font-size: 18px;
-				cursor: pointer;
+	// 		.nav__item {
+	// 			list-style-type: none;
+	// 			font-family: 'Bagel Fat One', cursive;
+	// 			font-size: 18px;
+	// 			cursor: pointer;
 
-				.nav__link {
-					text-decoration: none;
-				}
+	// 			.nav__link {
+	// 				text-decoration: none;
+	// 			}
 
-				.nav__link:hover {
-					color: blueviolet;
-				}
-			}
-		}
-	}
+	// 			.nav__link:hover {
+	// 				color: blueviolet;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	.header-counter {
 		margin-left: $spacing-medium ;
@@ -84,7 +84,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
-		height: 300px;
+		height: 200px;
 		align-items: center;
 		padding: 10px 0;
 		margin: 0;
@@ -98,12 +98,12 @@
 			flex-direction: column;
 		}
 
-		.nav {
+		// .nav {
 
-			max-width: 619px;
-			width: 100%;
-			margin-right: 40px;
-		}
+		// 	max-width: 619px;
+		// 	width: 100%;
+		// 	margin-right: 40px;
+		// }
 
 		.header-counter {
 			max-width: 619px;

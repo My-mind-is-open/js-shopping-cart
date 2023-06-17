@@ -63,4 +63,4 @@ class Sort {
 }
 
 const sortProducts = new Sort();
-sortProducts.render()
+// sortProducts.render()

@@ -34,15 +34,15 @@
 		}
 
 		.high {
-			border: 2px solid greenyellow;
+			border: 2px solid $color-greenyellow;
 		}
 
 		.middle {
-			border: 2px solid orange;
+			border: 2px solid $color-orange;
 		}
 
 		.low {
-			border: 2px solid red;
+			border: 2px solid $color-red;
 		}
 
 
@@ -85,9 +85,9 @@
 				.products-element__size {
 					width: 20px;
 					height: 20px;
-					background-color: bisque;
+					background-color: $color-bisque;
 					font-size: 12px;
-					border: 1px solid black;
+					border: 1px solid $color-black;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -96,11 +96,11 @@
 				}
 
 				.products-element__size-active {
-					background: #FF1493;
+					background: $color-filo;
 				}
 
 				.products-element__size:hover {
-					background: #00BFFF;
+					background: $color-blue;
 				}
 			}
 		}

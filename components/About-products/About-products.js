@@ -16,10 +16,7 @@ class About_products {
 
 		CATALOG.forEach(({ id, about, name, img }) => {
 
-
 			if (idProduct == id) {
-
-
 				htmlCatalog += `
 			
 				<div class="about-products-wrap">
@@ -32,23 +29,9 @@ class About_products {
 				</div>
 				
 				`;
-
-
-
-
-
 			}
 
-
-
-
-
-
-
-
 		});
-
-
 
 		const html = `
 		<div class="about-products">

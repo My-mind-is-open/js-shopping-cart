@@ -1,0 +1,162 @@
+[
+	{
+		"id": "'el1'",
+		"name": "'GIANNIS IMMORTALITY'",
+		"img": "https://i.ibb.co/pj4JDsz/img1.jpg",
+		"price": 10990,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "The future of basketball is positionless, and nobody embodies this evolution like MVP Giannis Antetokounmpo. The Giannis Immortality is a game shoe for players who love Giannis' multidimensional game and want a piece of his freaky style.",
+		"rating": 9.4
+	},
+	{
+		"id": "el2",
+		"name": "NIKE KYRIE VI",
+		"img": "https://i.ibb.co/Kbpt5qH/img2.jpg",
+		"price": 12490,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "Whether you’re a dunk contest-like leaper or a below-the-rim wonder roaming the baseline, feel faster, lower to the court and assured in the LeBron NXXT Gen. We specifically tailored it to meet the demands of today’s fast-paced game, so that you can stay ahead of the opposition with your speed and force in all directions.",
+		"rating": 7.8
+	},
+	{
+		"id": "el3",
+		"name": "RENEW ELEVATE III",
+		"img": "https://i.ibb.co/gtzn0Lr/img3.jpg",
+		"price": 14990,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": " Level up your game on both ends of the floor in the Nike Renew Elevate 3. Specifically tuned for 2-way players who want to make an impact offensively and defensively, this shoe helps you optimize your ability with all-game, all-season support and stability. Improved traction and arch support enhance cutting and pivoting, which can make the difference down the stretch.",
+		"rating": 9.4
+	},
+	{
+		"id": "el4",
+		"name": " NIKE RENEW",
+		"img": "https://i.ibb.co/znF11XJ/img4.jpg",
+		"price": 21990,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "The Nike Renew Retaliation TR 3 takes containment a step further with arc-shaped support on a redesigned sole. Soft, springy foam keeps it comfortable as you move through class-based workouts. The laces anchor to supports that hold your midfoot down securely during cardio, bodyweight moves and everything in between.",
+		"rating": 8.7
+	},
+	{
+		"id": "el5",
+		"name": "BLAZER LOW `77",
+		"img": "https://i.ibb.co/bvGtGnX/img5.jpg",
+		"price": 16490,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "Praised by the streets for its classic simplicity and comfort, the Nike Blazer Low 77 Vintage returns with its low-profile style and heritage b-ball looks. Featuring luscious suede details, a retro Swoosh design and a super-soft collar, it s the must-have wardrobe staple that will take you everywhere.",
+		"rating": 9.3
+	},
+	{
+		"id": "el6",
+		"name": "AIR FORCE 1",
+		"img": "https://i.ibb.co/pRY5jMS/img6.jpg",
+		"price": 18490,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "Take your love for the game with you wherever you go. Crossing hardwood comfort with off-court flair, these kicks put a fresh spin on a hoops classic with basketball-inspired Swoosh logos and a woven net-inspired upper. Of course, we kept the same era-echoing 80s construction and hidden Air units you know and love for that legendary AF1 feel. Go ahead, slip into a slam dunk.",
+		"rating": 9
+	},
+	{
+		"id": "el7",
+		"name": "WMNS DUNK",
+		"img": "https://i.ibb.co/kQP5Vm9/img7.jpg",
+		"price": 18990,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "Created for the hardwood but taken to the streets, the 80s b-ball icon returns with perfectly shined overlays and classic team colors. With its iconic hoops design, the Nike Dunk Low channels 80s vintage back onto the streets while its padded, low-cut collar lets you take your game anywhere—in comfort.",
+		"rating": 9.5
+	},
+	{
+		"id": "el8",
+		"name": "DUNK LOW",
+		"img": "https://i.ibb.co/h1mJXXN/img8.jpg",
+		"price": 12990,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "Designed in partnership with individuals from the Haudenosaunee Confederacy and Ojibwe communities, every detail is purposefully crafted. Up top, vibrant and intricate embroidery reflects traditional motifs from the Great Lakes and Woodlands regions. The Dunk was the perfect backdrop, letting us collaborate with Indigenous artists from these communities to highlight a graphic expression that culturally appreciates them, says footwear material designer Nico Verburgt (Ojibwe).",
+		"rating": 8.7
+	},
+	{
+		"id": "el9",
+		"name": "DUNK LOW",
+		"img": "https://i.ibb.co/pvB0VCY/img9.jpg",
+		"price": 23990,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "Created for the hardwood but taken to the streets, this 80s b-ball icon returns with classic details and throwback hoops flair. Supple leather overlays help the Nike Dunk channel vintage style while its padded, low-cut collar lets you take your game anywhere—in comfort.",
+		"rating": 7.5
+	},
+	{
+		"id": "el10",
+		"name": "ZOOM FREAK",
+		"img": "https://i.ibb.co/fCwFC3n/img10.jpg",
+		"price": 15990,
+		"size": [
+			"40",
+			"41",
+			"42",
+			"43",
+			"44",
+			"45"
+		],
+		"about": "Giannis is an incessant storm of stamina and skill that keeps coming at opponents for 4 quarters or more. The forward-thinking design of his latest signature shoe helps propel you down the court in a lightweight fit that moves with you. It can handle quick changes in direction on both sides of the floor, giving you side-to-side stability and multidirectional traction as you Euro step to the hoop.",
+		"rating": 8.5
+	}
+]

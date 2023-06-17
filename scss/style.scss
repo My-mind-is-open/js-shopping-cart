@@ -4,20 +4,7 @@
 @import'shopping';
 @import 'about-products';
 @import 'sort';
-
-::-webkit-scrollbar {
-	width: 8px;
-
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: var(--color-dark);
-	border-radius: 5px;
-}
-
-::-webkit-scrollbar-track {
-	background-color: var(--color-white);
-}
+@import 'spinner';
 
 * {
 	box-sizing: border-box;
@@ -31,5 +18,12 @@ body {
 	font-family: sans-serif;
 	line-height: 1.7;
 	background-color: var(--color-light);
+	overflow-x: hidden;
+}
 
+.main-wrapper {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 1;
 }

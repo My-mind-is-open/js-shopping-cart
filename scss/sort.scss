@@ -27,18 +27,18 @@
 			height: 40px;
 			border-radius: 15%;
 			cursor: pointer;
-			border: 2px solid#008B8B;
+			border: 2px solid $color-blackGreen;
 			font-family: 'Roboto Condensed', sans-serif;
 			background: $color-white;
 		}
 
 		.sort__btn:hover {
-			background-color: #6495ED;
+			background-color: $color-blue-dark;
 		}
 
 		.sort__btn-active {
-			background: #FFB6C1;
-			border: 2px solid black;
+			background: $color-pink;
+			border: 2px solid $color-black;
 		}
 	}
 

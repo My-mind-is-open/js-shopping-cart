@@ -53,6 +53,7 @@ class Shopping {
 		const productsStore = localStorageUtil.getProducts();
 		let sumCatalog = 0;
 		let htmlCatalog = '';
+
 		CATALOG.forEach(({ id, name, price }) => {
 			let amount = 0;
 			let index = productsStore.find((e) => e.name == id);
@@ -64,32 +65,43 @@ class Shopping {
 						sumCatalog += price;
 					}
 				})
+
+
 				htmlCatalog += `
-				<tr>
-					<td class="shopping-element__name">${name}</td>
-					<td class="shopping-element__price">👉 ${price.toLocaleString()} RUB</td>
-					<td class="shopping-element__size">Size: ${index.sizes}, </td>
-					<td class="shopping-element__size">Amount: ${amount}</td>
-					<td><button class="shopping-element__plus" onclick="shoppingPage.addObj(this, '${id}')"></button></td>
-					<td><button class="shopping-element__minus" onclick="shoppingPage.deleteObj(this, '${id}')"></button></td>
-				</tr>
+				<div class="shopping-element__information">
+					<span class="shopping-element__name">${name}</span>
+					<span class="shopping-element__price">👉 ${price.toLocaleString()} RUB,</span>
+					<span class="shopping-element__size">Size: ${index.sizes}, </span>
+					<span class="shopping-element__amount"> Amount: ${amount}</span>
+					<div class='shopping-element__amount-chage'><span><button class="shopping-element__plus" onclick="shoppingPage.addObj(this, '${id}')"></button></span>
+					<span><button class="shopping-element__minus" onclick="shoppingPage.deleteObj(this, '${id}')"></button></span></div>
+				</div>
 				`;
 
 			}
 
+			if (productsStore.length == 0) {
+				htmlCatalog = `<h1 class="shopping-element__emty">Add products to busket</h1>
+				<img src='../img/basket.jpg' class="shopping-element__img"/>
+				
+				`;
+			}
+
+
+
+
 		});
+
+
 		const html = `
 		<div class='shopping-container'>
-		<table class="table">
+		<div class="table">
 		${htmlCatalog}
-		<tr>
-					<td class="shopping-element__name">Сумма</td>
-					<td class="shopping-element__price">💲 ${sumCatalog.toLocaleString()} RUB</td>
-				</tr>
-		</table>
+		<span class="shopping-element__sum">Сумма💲: ${sumCatalog.toLocaleString()}RUB</span>
+		
+		</div>
 		<button class="shoppingPage__btn" onclick="shoppingPage.handleClear()">
 		</button>
-		
 
 		<button class="shoppingPage__btn-clear" onclick="shoppingPage.clearBascket(this)">Clear basket</button>
 		</div>
