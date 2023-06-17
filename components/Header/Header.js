@@ -11,7 +11,7 @@ class Header {
 	<div class="header-container">
 	<div class="header__label">
 	<span class="header__text">Sneakers</span>
-	<img src="../img/purple.png" class="header__img"/>
+	<img src="https://i.ibb.co/DGXCY1T/purple.png" class="header__img"/>
 	</div>
 	
 	<div class="header-counter" onclick="headerPage.handleOpenShoppingPage()">

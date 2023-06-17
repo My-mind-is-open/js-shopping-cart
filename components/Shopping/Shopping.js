@@ -82,7 +82,7 @@ class Shopping {
 
 			if (productsStore.length == 0) {
 				htmlCatalog = `<h1 class="shopping-element__emty">Add products to busket</h1>
-				<img src='../img/basket.jpg' class="shopping-element__img"/>
+				<img src='https://i.ibb.co/0jbND2N/basket.jpg' class="shopping-element__img"/>
 				
 				`;
 			}
