@@ -1,14 +1,16 @@
-class Products {
+
+
+class ForMen {
 	constructor() {
-		this.classNameActive = 'products-element__btn_active';
+		this.classNameActive = 'men_products-element__btn_active';
 		this.labalAdd = 'Добавить в корзину';
 		this.labalRemove = 'Удалить из корзины';
-		this.classNameActiveSize = "products-element__size-active";
+		this.classNameActiveSize = "men_products-element__size-active";
 		this.activeClassSize = '';
 		this.size = 40;
-		this.high = 'high';
-		this.middle = 'middle';
-		this.low = 'low';
+		this.high = 'Mhigh';
+		this.middle = 'Mmiddle';
+		this.low = 'Mlow';
 	}
 	handleSetLocationStorage(el, id) {
 
@@ -23,8 +25,8 @@ class Products {
 			el.innerHTML = this.labalAdd;
 		}
 		headerPage.render(products.length);
-		productsPage.returnSize()
-		productsPage.render()
+		MenPage.returnSize()
+		MenPage.render()
 	}
 	returnSize() {
 		this.size = 40;
@@ -34,6 +36,7 @@ class Products {
 		if (this.size !== size) {
 			this.size = size
 		}
+
 	}
 
 	showAboutProducts(id) {
@@ -41,13 +44,9 @@ class Products {
 	}
 
 	render(array = CATALOG) {
-
+		array = array.filter(el => el.segment == 'm')
 		const productsStore = localStorageUtil.getProducts()
 		let htmlCatalog = '';
-
-
-		array = array.filter(el => el.segment == 'hit')
-
 
 		array.forEach(({ id, name, price, img, size, rating }) => {
 			let activeClass = '';
@@ -73,7 +72,7 @@ class Products {
 				activeText = this.labalAdd;
 				size.forEach((el) => {
 					activeClassSize = this.activeClassSize
-					htmlsize += `<button class="products-element__size${activeClassSize}" onclick="productsPage.handleSetSizeproducts (this, '${el}')">${el}</button>`;
+					htmlsize += `<button class="men_products-element__size${activeClassSize}" onclick="MenPage.handleSetSizeproducts (this, '${el}')">${el}</button>`;
 				});
 
 			} else {
@@ -85,7 +84,7 @@ class Products {
 						} else (
 							activeClassSize = this.activeClassSize
 						)
-						htmlsize += `<button class="products-element__size${activeClassSize}" onclick="productsPage.handleSetSizeproducts 
+						htmlsize += `<button class="men_products-element__size${activeClassSize}" onclick="MenPage.handleSetSizeproducts 
 					(this, '${el}')">${el}</button>`;
 					}
 
@@ -99,60 +98,29 @@ class Products {
 
 
 			htmlCatalog += `
-			<li class="products-element">
-			<span class="products-element__name">${name}</span>
-			<span class="products-element__rating ${activeClassRating}">${rating}</span>
-			<img class="products-element__img" src="${img}" onclick="productsPage.showAboutProducts('${id}')"/>
-			<div class="products-element__sizes-price">
-			<span class="products-element__price">🤑${price.toLocaleString()} RUB</span>
-			<div class="products-element__sizes">
+			<li class="men_products-element">
+			<span class="men_products-element__name">${name}</span>
+			<span class="men_products-element__rating ${activeClassRating}">${rating}</span>
+			<img class="men_products-element__img" src="${img}" onclick="MenPage.showAboutProducts('${id}')"/>
+			<div class="men_products-element__sizes-price">
+			<span class="men_products-element__price">🤑${price.toLocaleString()} RUB</span>
+			<div class="men_products-element__sizes">
 			${htmlsize}
 			</div>
 			</div>
-			<button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage (this, '${id}')">
+			<button class="men_products-element__btn${activeClass}" onclick="MenPage.handleSetLocationStorage (this, '${id}')">
 			${activeText}
 			</button>
 			</li>
 			`;
 		});
 		const html = `
-		
-		<ul class="products-container">
-		
+
+		<ul class="men_products-container">
+
 		${htmlCatalog}
 		</ul>`;
-		ROOT_PRODUCTS.innerHTML = html;
+		ROOT_MEN.innerHTML = html;
 	}
 }
-const productsPage = new Products();
-// productsPage.render()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// handleSetSizeproducts(el, size) {
-
-// 	const { pushSizes, sizes } = localStorageUtil.putSizes(size);
-
-// 	if (pushSizes) {
-// 		el.classList.add(this.classNameActiveSize);
-// 	} else {
-// 		el.classList.remove(this.classNameActiveSize);
-// 		// el.classList.toggle(this.classNameActiveSize);
-// 	}
-// }
+const MenPage = new ForMen()

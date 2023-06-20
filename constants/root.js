@@ -7,4 +7,8 @@ const ROOT_ABOUT_PRODUCTS = document.getElementById('about-products');
 const ROOT_SORT = document.getElementById('sort');
 const ROOT_SPINNER = document.getElementById('spinner');
 const ROOT_ERROR = document.getElementById('error');
+const ROOT_SORTM = document.getElementById('sortM');
+const ROOT_MEN = document.getElementById('men');
+const ROOT_SORTW = document.getElementById('sortW');
+const ROOT_WOMEN = document.getElementById('women');
 

@@ -15,6 +15,7 @@
 	box-shadow: $box-shadow;
 	border: 3px solid $color-black;
 	background: $color-bg_about;
+	z-index: 7;
 
 	.about-products-wrap {
 		display: flex;

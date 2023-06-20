@@ -3,23 +3,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
 
-.sort__title {
+.sortW__title {
 	font-family: 'Noto Serif JP', serif;
 	position: absolute;
 	top: 14%;
 	left: 50%;
 	transform: translate(-50%, -12%);
 	font-size: 30px;
+
 }
 
-.sort {
+.sortW {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 
 
-	.sort-container {
+	.sortW-container {
 
 
 		margin-top: 70px;
@@ -31,7 +33,7 @@
 		align-items: center;
 
 
-		.sort__btn {
+		.sortW__btn {
 			width: 70px;
 			height: 40px;
 			border-radius: 15%;
@@ -41,16 +43,13 @@
 			background: $color-white;
 		}
 
-		.sort__btn:hover {
+		.sortW__btn:hover {
 			background-color: $color-blue-dark;
 		}
 
-		.sort__btn-active {
+		.sortW__btn-active {
 			background: $color-pink;
 			border: 2px solid $color-black;
 		}
 	}
-
-	// #6495ED
-
 }
