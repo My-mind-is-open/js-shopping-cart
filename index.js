@@ -7,7 +7,8 @@ function render() {
 	sortMProducts.render(CATALOG)
 	sortWProducts.render(CATALOG)
 	MenPage.render(CATALOG)
-	WomenPage.render(CATALOG)
+	WomenPage.render(CATALOG);
+	aboutPage.render()
 }
 spinnerPage.render()
 let CATALOG = []

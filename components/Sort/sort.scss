@@ -6,7 +6,7 @@
 .sort__title {
 	font-family: 'Noto Serif JP', serif;
 	position: absolute;
-	top: 14%;
+	top: 100px;
 	left: 50%;
 	transform: translate(-50%, -12%);
 	font-size: 30px;
@@ -51,6 +51,11 @@
 		}
 	}
 
-	// #6495ED
+}
 
+@media(max-width:619px) {
+	.sort__title {
+		top: 220px;
+
+	}
 }
