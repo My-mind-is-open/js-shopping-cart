@@ -104,6 +104,7 @@ class Shopping {
 		</button>
 
 		<button class="shoppingPage__btn-clear" onclick="shoppingPage.clearBascket(this)">Clear basket</button>
+		<button class="shoppingPage__btn-buy" onclick="buyPage.render()">Buy</button>
 		</div>
 		`;
 		ROOT_SHOPPING.innerHTML = html;

@@ -124,6 +124,30 @@
 	background: $color-black;
 }
 
+.shoppingPage__btn-buy {
+	text-decoration: none;
+	color: $color-black;
+	background: rgb(9, 180, 214);
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	border: 1px solid $color-black;
+	z-index: 0;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin: 0 15px 15px 0;
+	outline: none;
+	cursor: pointer;
+	position: absolute;
+	left: $spacing-large;
+	bottom: $spacing-large ;
+}
+
+.shoppingPage__btn-buy:hover {
+	color: $color-white;
+	background: $color-black;
+}
+
 .shopping-element__plus {
 
 	background-image: url("../img/plus.png");
@@ -186,8 +210,8 @@
 
 		.shoppingPage__btn {
 
-			left: $spacing-large;
-			top: 88.5%;
+			// left: $spacing-large;
+			// top: 88.5%;
 		}
 	}
 

@@ -14,4 +14,5 @@ const ROOT_WOMEN = document.getElementById('women');
 const ROOT_ABOUT = document.getElementById('about');
 const ROOT_FOOTER = document.getElementById('footer');
 const ROOT_REGISTR_FORM = document.getElementById('regists-form');
+const ROOT_BUY = document.getElementById('buy');
 
