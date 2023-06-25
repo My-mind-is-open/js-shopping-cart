@@ -11,5 +11,7 @@ const ROOT_SORTM = document.getElementById('sortM');
 const ROOT_MEN = document.getElementById('men');
 const ROOT_SORTW = document.getElementById('sortW');
 const ROOT_WOMEN = document.getElementById('women');
-const ROOT_ABOUT = document.getElementById('about')
+const ROOT_ABOUT = document.getElementById('about');
+const ROOT_FOOTER = document.getElementById('footer');
+const ROOT_REGISTR_FORM = document.getElementById('regists-form');
 

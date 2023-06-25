@@ -56,9 +56,9 @@ class Sort {
 		this.array = array;
 		let html = '';
 		html = `
-		<h1 class="sort__title">Our hits</h1>
-		<div class="sort">
 		
+		<div class="sort">
+		<h1 class="sort__title" id="OurHits">Our hits</h1>
 	<div class="sort-container">
 	<button class="sort__btn ${this.activeClassPriceHigh}" onclick="sortProducts.price_high(this)">Price high</button>
 	<button class="sort__btn ${this.activeClassPricelow}" onclick="sortProducts.price_low()">Price low</button>

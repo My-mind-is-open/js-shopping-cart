@@ -1,0 +1,74 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+.footer {
+	position: relative;
+	width: 100%;
+	background: black;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: -1px;
+
+
+
+
+
+	.footer-social__icon {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 0;
+
+
+		.footer-social__icon-item {
+			list-style: none;
+
+			.footer__link {
+				.footer__icons {
+					margin: 0 10px;
+					display: inline-block;
+					transition: 0.5s;
+					width: 32px;
+					height: 32px;
+				}
+			}
+
+			.footer__icons:hover {
+				transform: translateY(-10px);
+				cursor: pointer;
+			}
+
+		}
+	}
+
+	.footer__menu {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 0;
+
+		.footer__menu-item {
+			list-style: none;
+
+			.footer__menu-link {
+				color: white;
+				margin: 0 10px;
+				display: inline-block;
+				text-decoration: none;
+				opacity: 0.75;
+				cursor: pointer;
+				font-family: 'Noto Serif JP', serif;
+			}
+
+			.footer__menu-link:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

@@ -9,7 +9,7 @@ class About {
 
 		let html = `
 		<div class='about-container'>
-		<h1 class="about-title">About</h1>
+		<h1 class="about-title" id="about1">About</h1>
 <div class="about-history">
 <div class="text-container about-history__text-container">
 <h4 class='subtitle'>History</h4>
@@ -57,7 +57,7 @@ Our goal is to expand the distribution areas of these products and make a profit
 			</div>
 			<div class="collection__card">
 				<div class="collection__imgBx">
-					<img class="collection__img" src="https://i.ibb.co/2Ps8gVr/col3.webp" alt="">
+					<img class="collection__img" src="https://i.ibb.co/1X55rjV/col4.jpg" alt="">
 				</div>
 				<div class="collection__contentBx">
 					<div class="collection__content">
@@ -70,7 +70,7 @@ Our goal is to expand the distribution areas of these products and make a profit
 			</div>
 			<div class="collection__card">
 				<div class="collection__imgBx">
-					<img class="collection__img" src="https://i.ibb.co/1X55rjV/col4.jpg" alt="">
+					<img class="collection__img" src="https://i.ibb.co/2Ps8gVr/col3.webp" alt="">
 				</div>
 				<div class="collection__contentBx">
 					<div class="collection__content">

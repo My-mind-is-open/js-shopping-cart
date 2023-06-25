@@ -6,9 +6,9 @@
 .sort__title {
 	font-family: 'Noto Serif JP', serif;
 	position: absolute;
-	top: 100px;
+	top: 10px;
 	left: 50%;
-	transform: translate(-50%, -12%);
+	transform: translate(-50%, 0%);
 	font-size: 30px;
 }
 
@@ -17,7 +17,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	position: relative;
 
 	.sort-container {
 
@@ -53,9 +53,9 @@
 
 }
 
-@media(max-width:619px) {
-	.sort__title {
-		top: 220px;
+// @media(max-width:619px) {
+// 	.sort__title {
+// 		top: 220px;
 
-	}
-}
+// 	}
+// }

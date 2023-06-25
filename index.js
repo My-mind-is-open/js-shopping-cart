@@ -2,13 +2,15 @@ function render() {
 	const productsStore = localStorageUtil.getProducts();
 
 	headerPage.render(productsStore.length);
-	productsPage.render(CATALOG)
-	sortProducts.render(CATALOG)
-	sortMProducts.render(CATALOG)
-	sortWProducts.render(CATALOG)
-	MenPage.render(CATALOG)
+	productsPage.render(CATALOG);
+	sortProducts.render(CATALOG);
+	sortMProducts.render(CATALOG);
+	sortWProducts.render(CATALOG);
+	MenPage.render(CATALOG);
 	WomenPage.render(CATALOG);
-	aboutPage.render()
+	aboutPage.render();
+	footerPage.render();
+	registrPage.render();
 }
 spinnerPage.render()
 let CATALOG = []

@@ -1,16 +1,19 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
 
 .about-container {
 	max-width: 1440px;
 	width: 100%;
-	height: 1000px;
+	// height: 2500px;
 
+	height: 2500px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+
 	// margin-top: 40px;
+
 
 
 	.about-title {
@@ -127,7 +130,6 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	// max-height: 1350px;
 	width: 100%;
 	margin-top: 80px;
 
@@ -233,7 +235,7 @@
 	.about-container {
 		max-width: 1440px;
 		width: 100%;
-		height: 1000px;
+		height: 3300px;
 
 		display: flex;
 		justify-content: space-between;
@@ -259,7 +261,6 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-
 
 			.about-history__text-container {
 				margin-left: 100px;
@@ -326,7 +327,7 @@
 	.about-container {
 		max-width: 1440px;
 		width: 100%;
-		height: 1200px;
+		height: 3300px;
 
 		display: flex;
 		justify-content: space-between;
@@ -418,15 +419,22 @@
 	}
 }
 
+@media(max-width:761px) {
+	.about-container {
+
+		height: 5200px;
+	}
+}
+
 @media(max-width:507px) {
 	.about-container {
 		max-width: 1440px;
 		width: 100%;
-		height: 1000px;
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
 
+		height: 5200px;
 
 		.about-title {
 			font-family: 'Noto Serif JP', serif;

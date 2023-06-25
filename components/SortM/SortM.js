@@ -57,7 +57,7 @@ class SortM {
 		html = `
 		
 		<div class="sortM">
-		<h1 class="sortM__title">For men</h1>
+		<h1 class="sortM__title" id="ForMen">For men</h1>
 	<div class="sortM-container">
 	<button class="sortM__btn ${this.activeClassPriceHigh}" onclick="sortMProducts.price_high(this)">Price high</button>
 	<button class="sortM__btn ${this.activeClassPricelow}" onclick="sortMProducts.price_low()">Price low</button>

@@ -1,6 +1,6 @@
 
 
-class About_products {
+class AboutProducts {
 	constructor() {
 
 	}
@@ -41,4 +41,4 @@ class About_products {
 		ROOT_ABOUT_PRODUCTS.innerHTML = html;
 	}
 }
-const aboutProductPage = new About_products;
+const aboutProductPage = new AboutProducts();
