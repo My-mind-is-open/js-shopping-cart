@@ -1910,7 +1910,7 @@ a {
   height: 100vh;
   width: 100%;
   max-width: 1440px;
-  background-color: #0b0217;
+  background-color: black;
 }
 
 /* From */
@@ -2093,6 +2093,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   z-index: 7;
+  max-width: 1440px;
+  opacity: 0.8;
 }
 
 .buy-box {
