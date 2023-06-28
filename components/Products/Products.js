@@ -12,8 +12,14 @@ class Products {
 	}
 	handleSetLocationStorage(el, id) {
 
-		const { pushProduct, products } = localStorageUtil.putProducts(id, this.size);
 
+
+
+
+
+
+
+		const { pushProduct, products } = localStorageUtil.putProducts(id, this.size);
 		if (pushProduct) {
 			el.classList.add(this.classNameActive);
 			el.innerHTML = this.labalRemove;
@@ -24,8 +30,24 @@ class Products {
 		}
 		headerPage.render(products.length);
 		productsPage.returnSize()
-		productsPage.render()
+		productsPage.render();
+
+
+
+
+		// let widthMainContainer = document.querySelector('.main-wrapper').clientWidth;
+
+
+
+
+
+
+
+
 	}
+
+
+
 	returnSize() {
 		this.size = 40;
 	}

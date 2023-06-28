@@ -27,7 +27,6 @@
 		width: 100%;
 
 		max-width: 1152px;
-
 		max-height: 800px;
 
 		.about-products__img {
@@ -39,7 +38,7 @@
 
 		.box {
 			display: flex;
-			justify-content: flex-end;
+			justify-content: center;
 			align-items: center;
 			flex-direction: column;
 			width: 504px;
@@ -84,6 +83,8 @@
 			flex-direction: column;
 			justify-content: space-between;
 			align-items: center;
+			// border: 1px solid red;
+			margin: 0;
 
 			.about-products__img {
 				height: 350px;
@@ -94,6 +95,11 @@
 
 			.box {
 				margin-right: 0px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 50px;
+
 			}
 		}
 	}
@@ -116,6 +122,8 @@
 			.box {
 				margin-right: 0px;
 				width: 404px;
+				margin-top: 10px;
+
 
 				.about-products__lead {
 					font-family: 'Roboto Condensed', sans-serif;

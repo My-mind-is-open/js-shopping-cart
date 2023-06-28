@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
+
+
+
+
+
+
 .buy-container {
 	width: 100%;
 	height: 100vh;
-	background-color: black;
+	border-radius: 2px solid;
 	top: 0;
 	position: fixed;
 	display: flex;
@@ -13,7 +19,9 @@
 	align-items: center;
 	z-index: 7;
 	max-width: 1440px;
-	opacity: 0.8;
+	background-color: $color-black;
+	opacity: 0.88;
+
 }
 
 .buy-box {
@@ -35,15 +43,15 @@
 }
 
 .buy__title {
-	// padding: 30px 0px;
+
 	font-size: 35px;
-	color: black;
+	color: $color-black;
 	font-family: 'Roboto Condensed', sans-serif;
 
 }
 
 .buy__label {
-	color: black;
+	color: $color-black;
 	text-transform: uppercase;
 	position: relative;
 	font-size: 10px;
@@ -60,7 +68,7 @@
 	margin-bottom: 20px;
 	padding-bottom: 5px;
 	padding-right: 30px;
-	color: black;
+	color: $color-black;
 	font-size: 18px;
 	background-color: transparent;
 }
@@ -95,7 +103,7 @@
 	border: none;
 	outline: none;
 	background: #8a2be2;
-	color: black;
+	color: $color-black;
 	width: 100%;
 	height: 40px;
 	padding: 10px;
@@ -107,7 +115,7 @@
 }
 
 .buy__btn:hover {
-	border: 2px solid black;
+	border: 2px solid $color-black;
 
 }
 
@@ -116,6 +124,7 @@
 	top: 10px;
 	right: 10px;
 	position: absolute;
+
 	width: 20px;
 	height: 20px;
 	background-image: url("../img/close.png");
@@ -123,5 +132,5 @@
 	background-position: center center;
 	background-size: contain;
 	cursor: pointer;
-	background-color: $color-white;
+
 }

@@ -1,3 +1,5 @@
+@import "variables";
+
 .home {
 	position: absolute;
 	height: 100vh;
@@ -15,28 +17,13 @@
 	height: 100vh;
 	width: 100%;
 	max-width: 1440px;
-	background-color: black;
+
+	background-image: url('https://i.ibb.co/cLFTTSq/pexels-photo-1598505.jpg');
+	background-repeat: no-repeat;
+
 }
 
-// .home::before {
-// 	content: "";
-// 	position: fixed;
-// 	z-index: 7;
-// 	height: 100vh;
-// 	width: 100%;
-// 	// background-color: rgba(0, 0, 0, 0.6);
-// 	z-index: 100;
-// 	opacity: 0;
-// 	pointer-events: none;
-// 	transition: all 0.5s ease-out;
-// 	background-color: red;
-// }
 
-// .home.show::before {
-// 	opacity: 1;
-// 	pointer-events: auto;
-
-// }
 
 /* From */
 .form_container {
@@ -87,7 +74,7 @@
 
 .form_container h2 {
 	font-size: 22px;
-	color: #0b0217;
+	color: $color-black;
 	text-align: center;
 }
 
@@ -110,7 +97,7 @@
 }
 
 .input_box input:focus {
-	border-color: #7d2ae8;
+	border-color: $color-focus;
 }
 
 .input_box i {
@@ -128,7 +115,7 @@
 
 .input_box input:focus~i.email,
 .input_box input:focus~i.password {
-	color: #7d2ae8;
+	color: $color-focus;
 }
 
 .input_box i.pw_hide {
@@ -145,7 +132,7 @@
 }
 
 .form_container a {
-	color: #7d2ae8;
+	color: $color-focus;
 	font-size: 12px;
 }
 
@@ -160,18 +147,18 @@
 }
 
 .checkbox input {
-	accent-color: #7d2ae8;
+	accent-color: $color-focus;
 }
 
 .checkbox label {
 	font-size: 12px;
 	cursor: pointer;
 	user-select: none;
-	color: #0b0217;
+	color: $color-black;
 }
 
 .form_container .button {
-	background: #7d2ae8;
+	background: $color-focus;
 	margin-top: 30px;
 	width: 100%;
 	padding: 10px 0;
@@ -182,4 +169,8 @@
 	font-size: 12px;
 	text-align: center;
 	margin-top: 15px;
+}
+
+.log {
+	cursor: pointer;
 }

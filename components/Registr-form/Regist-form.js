@@ -60,7 +60,7 @@ class RegistForm {
 						</span>
 						<a href="#" class="forgot_pw">Forgot password?</a>
 					</div>
-					<button class="button">Login Now</button>
+					<button class="button log">Login Now</button>
 					<div class="login_signup" >Don't have an account? <a href="#" id="signup" onclick="registrPage.loginSignup()" >Signup</a></div>
 				</form>
 			</div>
@@ -82,7 +82,7 @@ class RegistForm {
 						<i class="uil uil-lock password"></i>
 						<i class="uil uil-eye-slash pw_hide" onclick="registrPage.changeTypeInput(this)" ></i>
 					</div>
-					<button class="button">Signup Now</button>
+					<button class="button log">Signup Now</button>
 					<div class="login_signup">Already have an account? <a href="#" id="login" onclick="registrPage.showLogin()" >Login</a></div>
 				</form>
 			</div>

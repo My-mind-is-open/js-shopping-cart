@@ -1,19 +1,25 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
+#footer {
+	width: 100%;
+	background: $color-black;
+}
+
 .footer {
 	position: relative;
 	width: 100%;
-	background: black;
+	background: $color-black;
 	min-height: 100px;
 	padding: 20px 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: -1px;
+	max-width: 1440px;
 
 
+	margin: 0 auto;
 
 
 
@@ -57,17 +63,17 @@
 			list-style: none;
 
 			.footer__menu-link {
-				color: white;
+				color: $color-white;
 				margin: 0 10px;
 				display: inline-block;
 				text-decoration: none;
-				opacity: 0.75;
+
 				cursor: pointer;
 				font-family: 'Noto Serif JP', serif;
 			}
 
 			.footer__menu-link:hover {
-				opacity: 1;
+				color: $color-focus;
 			}
 		}
 	}

@@ -11,6 +11,8 @@ class Shopping {
 		localStorage.clear();
 		shoppingPage.render();
 		productsPage.render();
+		MenPage.render();
+		WomenPage.render()
 		headerPage.render(0)
 	}
 	addObj(el, id) {
@@ -53,6 +55,7 @@ class Shopping {
 		const productsStore = localStorageUtil.getProducts();
 		let sumCatalog = 0;
 		let htmlCatalog = '';
+		let buttons = '';
 
 		CATALOG.forEach(({ id, name, price }) => {
 			let amount = 0;
@@ -92,7 +95,10 @@ class Shopping {
 
 		});
 
-
+		if (productsStore.length !== 0) {
+			buttons = `<button class="shoppingPage__btn-clear" onclick="shoppingPage.clearBascket(this)">Clear basket</button>
+	<button class="shoppingPage__btn-buy" onclick="buyPage.render()">Buy</button>`;
+		}
 		const html = `
 		<div class='shopping-container'>
 		<div class="table">
@@ -103,8 +109,7 @@ class Shopping {
 		<button class="shoppingPage__btn" onclick="shoppingPage.handleClear()">
 		</button>
 
-		<button class="shoppingPage__btn-clear" onclick="shoppingPage.clearBascket(this)">Clear basket</button>
-		<button class="shoppingPage__btn-buy" onclick="buyPage.render()">Buy</button>
+		${buttons}
 		</div>
 		`;
 		ROOT_SHOPPING.innerHTML = html;

@@ -16,17 +16,22 @@ class ForMen {
 
 		const { pushProduct, products } = localStorageUtil.putProducts(id, this.size);
 
-		if (pushProduct) {
-			el.classList.add(this.classNameActive);
-			el.innerHTML = this.labalRemove;
+		if (products.length < 6) {
+			if (pushProduct) {
+				el.classList.add(this.classNameActive);
+				el.innerHTML = this.labalRemove;
 
+			} else {
+				el.classList.remove(this.classNameActive);
+				el.innerHTML = this.labalAdd;
+			}
+			headerPage.render(products.length);
+			MenPage.returnSize()
+			MenPage.render()
 		} else {
-			el.classList.remove(this.classNameActive);
-			el.innerHTML = this.labalAdd;
+			alert('Busket is full, please remove items from your busket');
 		}
-		headerPage.render(products.length);
-		MenPage.returnSize()
-		MenPage.render()
+
 	}
 	returnSize() {
 		this.size = 40;
